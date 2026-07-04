@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI-консультант для стоматологии | Запись пациентов 24/7</title>
+    <meta name="description" content="AI-консультант для стоматологической клиники отвечает пациентам, записывает на прием, снижает нагрузку на администраторов и помогает не терять заявки. Бесплатная демонстрация.">
+    <meta name="keywords" content="AI-консультант для стоматологии, чат-бот для стоматологии, автоматизация записи пациентов, AI-администратор клиники, нейросеть для стоматологии, автоматизация стоматологической клиники">
+    <meta property="og:title" content="AI-консультант для стоматологии">
+    <meta property="og:description" content="Запись пациентов, ответы на вопросы и передача администратору 24/7. Получите бесплатную демонстрацию.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/hero-clinic.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) { return; }
+        }
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110383859', 'ym');
+
+    ym(110383859, 'init', {
+        ssr:true,
+        webvisor:true,
+        clickmap:true,
+        accurateTrackBounce:true,
+        trackLinks:true
+    });
+</script>
+<!-- /Yandex.Metrika counter -->
+  </head>
+  <body>
+    <header class="site-header" data-elevate>
+      <a class="brand" href="#hero" aria-label="AI-консультант для стоматологии">
+        <span class="brand-mark">AI</span>
+        <span>
+          <strong>Dental AI</strong>
+          <small>консультант для клиник</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#problem">Проблемы</a>
+        <a href="#solution">Решение</a>
+        <a href="#features">Возможности</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="header-cta" href="#demo">
+        <span>Получить демо</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M5 12h14"></path>
+          <path d="m12 5 7 7-7 7"></path>
+        </svg>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M4 6h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 18h16"></path>
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <picture>
+          <img class="hero-bg" src="assets/hero-clinic.png" alt="Современная стоматологическая клиника с цифровой панелью">
+        </picture>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="container hero-content">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">
+              <span class="pulse-dot"></span>
+              AI отвечает пациентам, пока ресепшен занят
+            </span>
+            <h1 id="hero-title">AI-консультант для стоматологии, который записывает пациентов 24/7</h1>
+            <p class="hero-lead">Отвечает на вопросы, подбирает врача, сообщает стоимость услуг, напоминает о приеме и переводит сложные диалоги живому администратору.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#demo">
+                Получить демо
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+              <a class="btn btn-ghost" href="#dialog">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                Посмотреть сценарий
+              </a>
+            </div>
+            <ul class="hero-checks" aria-label="Ключевые преимущества">
+              <li>WhatsApp, Telegram, сайт</li>
+              <li>Передача администратору</li>
+              <li>Запуск без перестройки процессов</li>
+            </ul>
+          </div>
+
+          <aside class="chat-preview reveal reveal-delay" aria-label="Пример диалога AI с пациентом">
+            <div class="chat-preview-head">
+              <span class="bot-avatar">AI</span>
+              <div>
+                <strong>AI-консультант</strong>
+                <small>онлайн 24/7</small>
+              </div>
+            </div>
+            <div class="chat-line patient">Сколько стоит консультация ортодонта?</div>
+            <div class="chat-line ai">Здравствуйте. Подскажу стоимость и предложу ближайшее время у врача.</div>
+            <div class="chat-line patient">Можно завтра после 18:00?</div>
+            <div class="chat-line ai">Есть окно в 18:30. Записать вас?</div>
+            <div class="booking-chip">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                <path d="M16 2v4"></path>
+                <path d="M8 2v4"></path>
+                <path d="M3 10h18"></path>
+                <path d="m9 16 2 2 4-4"></path>
+              </svg>
+              Запись создана
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Для кого подходит">
+        <div class="container trust-grid">
+          <span>Для частных клиник</span>
+          <span>Для сетей стоматологий</span>
+          <span>Для управляющих и главных врачей</span>
+          <span>Для отделов маркетинга</span>
+        </div>
+      </section>
+
+      <section class="section problem" id="problem" aria-labelledby="problem-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Проблема</span>
+            <h2 id="problem-title">Пациенты не ждут ответа. Они уходят туда, где отвечают быстрее</h2>
+            <p>Клиника уже платит за рекламу, сайт и мессенджеры. Но если пациент получил ответ через час или не получил его вообще, бюджет не превращается в запись.</p>
+          </div>
+
+          <div class="pain-grid">
+            <article class="pain-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.8 12.8 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.8 12.8 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  <path d="m2 2 20 20"></path>
+                </svg>
+              </span>
+              <h3>Пропущенные обращения</h3>
+              <p>Звонки, формы и сообщения теряются, когда администратор занят пациентом у стойки.</p>
+            </article>
+            <article class="pain-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 6v6l4 2"></path>
+                </svg>
+              </span>
+              <h3>Долгое ожидание</h3>
+              <p>Чем дольше пациент ждет ответа, тем выше шанс, что он запишется в другую клинику.</p>
+            </article>
+            <article class="pain-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
+                </svg>
+              </span>
+              <h3>Однотипные вопросы</h3>
+              <p>Цены, подготовка, адрес, врачи и свободные окна повторяются десятки раз в день.</p>
+            </article>
+            <article class="pain-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </span>
+              <h3>Перегрузка ресепшен</h3>
+              <p>Команда тушит текущие задачи и не успевает качественно доводить заявки до записи.</p>
+            </article>
+            <article class="pain-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"></path>
+                </svg>
+              </span>
+              <h3>Вечерние и ночные заявки</h3>
+              <p>Пациент пишет тогда, когда ему удобно. Клиника часто отвечает уже утром.</p>
+            </article>
+            <article class="pain-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"></path>
+                  <path d="M4 6v12a2 2 0 0 0 2 2h14v-4"></path>
+                  <path d="M18 12a2 2 0 0 0 0 4h4v-4z"></path>
+                </svg>
+              </span>
+              <h3>Дорогой рост штата</h3>
+              <p>Больше обращений обычно означает больше людей, смен, контроля и обучения.</p>
+            </article>
+          </div>
+
+          <div class="center-action reveal">
+            <a class="btn btn-outline" href="#solution">Показать, как AI закрывает эти проблемы</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section solution" id="solution" aria-labelledby="solution-title">
+        <div class="container split-layout">
+          <div class="section-heading compact reveal">
+            <span class="eyebrow">Решение</span>
+            <h2 id="solution-title">AI-консультант берет первую линию общения с пациентами на себя</h2>
+            <p>Он отвечает мгновенно, ведет пациента к записи и подключает администратора только там, где нужен человек.</p>
+            <a class="btn btn-primary" href="#demo">
+              Заказать консультацию
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="flow-panel reveal reveal-delay" aria-label="Схема работы AI">
+            <div class="flow-node">
+              <span>01</span>
+              <strong>Пациент</strong>
+              <small>сайт, Telegram, WhatsApp</small>
+            </div>
+            <div class="flow-arrow" aria-hidden="true"></div>
+            <div class="flow-node active">
+              <span>02</span>
+              <strong>AI-консультант</strong>
+              <small>ответ, уточнение, подбор</small>
+            </div>
+            <div class="flow-arrow" aria-hidden="true"></div>
+            <div class="flow-node">
+              <span>03</span>
+              <strong>CRM / ресепшен</strong>
+              <small>запись или передача</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section how" id="how" aria-labelledby="how-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Как работает</span>
+            <h2 id="how-title">От первого вопроса до записи без лишнего ожидания</h2>
+            <p>Процесс выглядит привычно для пациента и прозрачно для команды клиники.</p>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <span class="step-number">01</span>
+              <h3>Пациент пишет</h3>
+              <p>На сайте, в мессенджере или через виджет.</p>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="step-number">02</span>
+              <h3>AI уточняет запрос</h3>
+              <p>Понимает услугу, срочность, предпочтения по врачу и времени.</p>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="step-number">03</span>
+              <h3>Подбирает вариант</h3>
+              <p>Рассказывает о стоимости, врачах и ближайших окнах.</p>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="step-number">04</span>
+              <h3>Записывает или передает</h3>
+              <p>Создает запись или подключает администратора в сложном случае.</p>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="step-number">05</span>
+              <h3>Напоминает о визите</h3>
+              <p>Снижает риск неявки и помогает перенести запись.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features" id="features" aria-labelledby="features-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Возможности</span>
+            <h2 id="features-title">Все, что обычно отвлекает администратора, AI делает автоматически</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M2 12h20"></path>
+                  <path d="M12 2a15.3 15.3 0 0 1 0 20"></path>
+                  <path d="M12 2a15.3 15.3 0 0 0 0 20"></path>
+                </svg>
+              </span>
+              <h3>Работает 24/7</h3>
+              <p>Не уходит на перерыв и отвечает пациентам вечером, ночью и в выходные.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M8 2v4"></path>
+                  <path d="M16 2v4"></path>
+                  <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                  <path d="M3 10h18"></path>
+                  <path d="m9 16 2 2 4-4"></path>
+                </svg>
+              </span>
+              <h3>Записывает на прием</h3>
+              <p>Помогает выбрать услугу, врача, время и подтвердить запись.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M12 2a10 10 0 0 0-7 17.1L4 22l3.2-1A10 10 0 1 0 12 2z"></path>
+                  <path d="M9 9h.01"></path>
+                  <path d="M15 9h.01"></path>
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                </svg>
+              </span>
+              <h3>Отвечает на вопросы</h3>
+              <p>Объясняет услуги, подготовку, ориентиры по стоимости и правила клиники.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="m16 11 2 2 4-4"></path>
+                </svg>
+              </span>
+              <h3>Подбирает врача</h3>
+              <p>Учитывает специализацию, запрос пациента и доступное расписание.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 7-3 7h18s-3 0-3-7"></path>
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+              </span>
+              <h3>Напоминает о записи</h3>
+              <p>Своевременно отправляет напоминания и снижает нагрузку на звонки.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M3 8h18"></path>
+                  <path d="M3 16h18"></path>
+                  <path d="M8 3v18"></path>
+                  <path d="M16 3v18"></path>
+                </svg>
+              </span>
+              <h3>Меняет и переносит</h3>
+              <p>Помогает пациенту перенести визит без длинной переписки.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
+                </svg>
+              </span>
+              <h3>Работает в каналах</h3>
+              <p>Сайт, Telegram, WhatsApp и другие мессенджеры подключаются к единой логике.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="icon-badge">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                  <path d="M18 8h4"></path>
+                  <path d="M20 6v4"></path>
+                </svg>
+              </span>
+              <h3>Передает человеку</h3>
+              <p>Если вопрос требует участия администратора, AI аккуратно подключает команду.</p>
+            </article>
+          </div>
+
+          <div class="note-line reveal">
+            AI не заменяет вашу команду полностью. Он снимает рутину и помогает людям заниматься тем, где действительно нужен живой контакт.
+          </div>
+        </div>
+      </section>
+
+      <section class="section business" aria-labelledby="business-title">
+        <div class="container business-layout">
+          <div class="business-media reveal">
+            <img src="assets/business-benefits.png" alt="Управляющая клиники и врач изучают показатели на планшете">
+            <div class="metric-card">
+              <span>Ответ пациенту</span>
+              <strong>за секунды</strong>
+              <small>даже вне рабочего времени</small>
+            </div>
+          </div>
+
+          <div class="section-heading compact reveal reveal-delay">
+            <span class="eyebrow">Для бизнеса</span>
+            <h2 id="business-title">Клиника получает больше обработанных обращений без увеличения нагрузки на ресепшен</h2>
+            <p>AI помогает быстрее отвечать на первичные вопросы, удерживать пациентов из рекламы и контролировать качество коммуникации.</p>
+
+            <div class="benefit-list">
+              <div>
+                <strong>Меньше потерянных лидов</strong>
+                <span>Каждое обращение получает быстрый первый ответ.</span>
+              </div>
+              <div>
+                <strong>Выше возврат рекламы</strong>
+                <span>Пациенты быстрее доходят от вопроса до записи.</span>
+              </div>
+              <div>
+                <strong>Команда меньше выгорает</strong>
+                <span>Рутина уходит AI, сложные задачи остаются людям.</span>
+              </div>
+            </div>
+
+            <a class="btn btn-primary" href="#demo">
+              Рассчитать эффект для клиники
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dialog" id="dialog" aria-labelledby="dialog-title">
+        <div class="container dialog-layout">
+          <div class="section-heading compact reveal">
+            <span class="eyebrow">Сценарий общения</span>
+            <h2 id="dialog-title">Так AI превращает вопрос пациента в запись</h2>
+            <p>Вместо сухого FAQ пациент получает понятный диалог, который ведет к конкретному действию.</p>
+            <a class="btn btn-outline" href="#demo">Посмотреть демо диалога</a>
+          </div>
+
+          <div class="phone-mockup reveal reveal-delay" aria-label="Демонстрация переписки">
+            <div class="phone-top">
+              <span class="bot-avatar">AI</span>
+              <div>
+                <strong>Dental AI</strong>
+                <small>консультант клиники</small>
+              </div>
+            </div>
+            <div class="phone-chat">
+              <p class="bubble patient">Здравствуйте, сколько стоит имплантация?</p>
+              <p class="bubble ai">Здравствуйте. Стоимость зависит от системы импланта и диагностики. Могу предложить консультацию имплантолога.</p>
+              <p class="bubble patient">Можно завтра вечером?</p>
+              <p class="bubble ai">Есть окно в 18:30 у доктора Ивановой. Записать вас?</p>
+              <p class="bubble patient">Да.</p>
+              <p class="bubble ai">Готово. Напомню о визите заранее.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section economics" aria-labelledby="economics-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Экономика</span>
+            <h2 id="economics-title">AI-консультант дешевле потери пациентов и постоянного расширения штата</h2>
+            <p>Это не замена клинике и не сложная IT-система. Это управляемый помощник, который закрывает первую линию коммуникации и оставляет человеку контроль.</p>
+          </div>
+
+          <div class="objection-grid">
+            <article class="objection-card reveal">
+              <h3>Это сложно?</h3>
+              <p>Настройку берем на себя: собираем частые вопросы, сценарии, каналы и правила передачи администратору.</p>
+            </article>
+            <article class="objection-card reveal">
+              <h3>Это безопасно?</h3>
+              <p>Доступы, сценарии и обработка данных обсуждаются до запуска. Сложные случаи уходят человеку.</p>
+            </article>
+            <article class="objection-card reveal">
+              <h3>AI может ошибиться?</h3>
+              <p>AI работает в заданных рамках, не ставит диагнозы и передает нестандартные вопросы администратору.</p>
+            </article>
+            <article class="objection-card reveal">
+              <h3>Можно отключить?</h3>
+              <p>Да. Каналы, сценарии и режимы работы можно менять, приостанавливать и корректировать.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section implementation" aria-labelledby="implementation-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Внедрение</span>
+            <h2 id="implementation-title">Запуск без сложной перестройки процессов</h2>
+            <p>Обычно внедрение занимает несколько дней. Точный срок зависит от CRM, каналов и объема базы знаний.</p>
+          </div>
+
+          <div class="implementation-grid">
+            <article class="implementation-step reveal">
+              <span>01</span>
+              <h3>Аудит обращений</h3>
+              <p>Разбираем каналы, частые вопросы и точки потери заявок.</p>
+            </article>
+            <article class="implementation-step reveal">
+              <span>02</span>
+              <h3>База знаний</h3>
+              <p>Собираем услуги, врачей, цены, подготовку и правила записи.</p>
+            </article>
+            <article class="implementation-step reveal">
+              <span>03</span>
+              <h3>Сценарии и интеграции</h3>
+              <p>Настраиваем диалоги, каналы, CRM и передачу администратору.</p>
+            </article>
+            <article class="implementation-step reveal">
+              <span>04</span>
+              <h3>Тестирование</h3>
+              <p>Проверяем вопросы пациентов, спорные случаи и качество ответов.</p>
+            </article>
+            <article class="implementation-step reveal">
+              <span>05</span>
+              <h3>Запуск</h3>
+              <p>Подключаем сайт и мессенджеры, следим за первыми диалогами.</p>
+            </article>
+            <article class="implementation-step reveal">
+              <span>06</span>
+              <h3>Аналитика</h3>
+              <p>Смотрим обращения, корректируем сценарии и повышаем конверсию.</p>
+            </article>
+          </div>
+
+          <div class="center-action reveal">
+            <a class="btn btn-outline" href="#demo">Получить план внедрения</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container faq-layout">
+          <div class="section-heading compact reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2 id="faq-title">Ответы на частые вопросы</h2>
+            <p>Здесь собраны главные возражения владельцев клиник перед демонстрацией.</p>
+            <a class="btn btn-primary" href="#demo">
+              Задать вопрос
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="accordion reveal reveal-delay">
+            <details open>
+              <summary>Это сложно внедрить?</summary>
+              <p>Нет. Мы помогаем собрать базу знаний, настроить сценарии, подключить каналы и протестировать диалоги до запуска.</p>
+            </details>
+            <details>
+              <summary>Что если AI ошибется?</summary>
+              <p>AI отвечает в рамках утвержденных сценариев, не ставит диагнозы и передает сложные вопросы администратору.</p>
+            </details>
+            <details>
+              <summary>Работает ли с существующей CRM?</summary>
+              <p>Интеграция зависит от вашей системы. На демо разберем текущие каналы и предложим подходящий вариант подключения.</p>
+            </details>
+            <details>
+              <summary>Нужно ли обучать сотрудников?</summary>
+              <p>Минимально. Команде нужно понимать, когда AI передает диалог и как продолжать общение с пациентом.</p>
+            </details>
+            <details>
+              <summary>Можно ли протестировать бесплатно?</summary>
+              <p>Да. Оставьте заявку, и мы покажем демонстрацию на сценариях, близких к вашей стоматологии.</p>
+            </details>
+            <details>
+              <summary>Можно ли отключить AI?</summary>
+              <p>Да. Каналы, сценарии и режимы работы можно приостанавливать, отключать и менять.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="demo" aria-labelledby="demo-title">
+        <img class="final-bg" src="assets/final-cta-clinic.png" alt="Современный стоматологический кабинет с цифровым оборудованием">
+        <div class="final-shade" aria-hidden="true"></div>
+        <div class="container final-layout">
+          <div class="final-copy reveal">
+            <span class="eyebrow light">Бесплатная демонстрация</span>
+            <h2 id="demo-title">Покажем, как AI-консультант будет работать именно в вашей стоматологии</h2>
+            <p>Разберем ваши каналы обращений, покажем сценарии диалога и предложим вариант запуска под вашу клинику.</p>
+          </div>
+
+          <form class="lead-form reveal reveal-delay" data-lead-form>
+            <div class="form-head">
+              <strong>Получить бесплатное демо</strong>
+              <small>Ответим и согласуем удобное время</small>
+            </div>
+            <label>
+              <span>Имя</span>
+              <input name="name" type="text" autocomplete="name" placeholder="Например, Анна" required>
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+            </label>
+            <label>
+              <span>Клиника</span>
+              <input name="clinic" type="text" placeholder="Название клиники">
+            </label>
+            <button class="btn btn-primary form-submit" type="submit">
+              Оставить заявку
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку данных. Без обязательств и навязчивых звонков.</p>
+            <p class="form-success" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts-layout">
+        <div>
+          <h2 id="contacts-title">Свяжитесь с нами удобным способом</h2>
+          <p>Менеджер ответит в рабочее время, а AI-консультант принимает обращения пациентов круглосуточно.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-outline dark" href="tel:+70000000000">+7 000 000-00-00</a>
+          <a class="btn btn-outline dark" href="https://t.me/" target="_blank" rel="noreferrer">Написать в Telegram</a>
+          <a class="btn btn-primary" href="#demo">Получить демо</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
